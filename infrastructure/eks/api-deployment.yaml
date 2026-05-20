@@ -16,6 +16,7 @@ spec:
       containers:
         - name: infoline-api
           image: infoline-hello:latest
+          imagePullPolicy: Never
           ports:
             - containerPort: 8080
           env:
@@ -53,6 +54,7 @@ spec:
       containers:
         - name: infoline-frontend
           image: infoline-frontend:latest
+          imagePullPolicy: Never
           ports:
             - containerPort: 4200
 ---
